@@ -1,0 +1,38 @@
+
+# Java and Maven
+**/target/
+*.class
+.mvn/wrapper/maven-wrapper.jar
+
+# IDE settings
+.vscode/
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+
+# Environment files and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Logs and temporary files
+*.log
+logs/
+*.tmp
+*.bak
+
+# Operating system
+.DS_Store
+Thumbs.db

@@ -1,0 +1,164 @@
+
+body {
+    margin: 0;
+    background-color: #f4f7fb;
+    color: #202938;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    min-height: 70px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.navbar-brand {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.dashboard-container {
+    max-width: 1600px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+main h2 {
+    font-weight: 700;
+    color: #172554;
+}
+
+.dashboard-card {
+    height: 100%;
+    min-height: 145px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(15, 23, 42, 0.07);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(15, 23, 42, 0.10);
+}
+
+.dashboard-card .card-body {
+    padding: 24px;
+}
+
+.card-label {
+    margin-bottom: 18px;
+    color: #64748b;
+    font-size: 16px;
+}
+
+.dashboard-card h3 {
+    margin-bottom: 8px;
+    color: #172033;
+    font-size: 28px;
+    font-weight: 700;
+    overflow-wrap: anywhere;
+}
+
+.history-card {
+    overflow: hidden;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(15, 23, 42, 0.07);
+}
+
+.card-header {
+    padding: 18px 20px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.table th,
+.table td {
+    padding: 14px 16px;
+    vertical-align: middle;
+}
+
+.table th {
+    color: #475569;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.table td {
+    font-size: 14px;
+}
+
+.table td:nth-child(4) {
+    min-width: 220px;
+}
+
+.event-badge {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.event-failure {
+    background-color: #fee2e2;
+    color: #b91c1c;
+}
+
+.event-recovery {
+    background-color: #dcfce7;
+    color: #166534;
+}
+
+.event-other {
+    background-color: #e2e8f0;
+    color: #334155;
+}
+
+#connectionAlert {
+    border-radius: 8px;
+}
+
+#appStatus.status-healthy {
+    color: #15803d;
+}
+
+#appStatus.status-unhealthy {
+    color: #b91c1c;
+}
+
+#appStatus.status-unknown {
+    color: #64748b;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    opacity: 0.65;
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        padding: 12px !important;
+    }
+
+    .navbar-brand {
+        font-size: 16px;
+    }
+
+    .dashboard-container {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    main h2 {
+        font-size: 23px;
+    }
+
+    .dashboard-card .card-body {
+        padding: 18px;
+    }
+
+    .dashboard-card h3 {
+        font-size: 25px;
+    }
+}
